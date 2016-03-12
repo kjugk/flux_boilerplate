@@ -1,5 +1,5 @@
 # flux_boilerplate
-Boilerplate for browser flux app
+Boilerplate for flux browser app.
 
 ### install
 
@@ -12,6 +12,3 @@ $ npm install
 
 $ gulp
 ```
-
-
-
