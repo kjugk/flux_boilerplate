@@ -10,5 +10,5 @@ $ cd flux_boilerplate
 
 $ npm install
 
-$ gulp
+$ gulp (OR $ node ./node_modules/gulp/bin/gulp)
 ```

@@ -10,10 +10,13 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
 
-var b = watchify(browserify({
+var b = browserify({
   entries: ['./js/index.js'],
-  transform: ['babelify']
-}))
+  transform: ['babelify'],
+  cache: {},
+  packageCache: {},
+  plugin: [watchify]
+})
 .on('update', bundle)
 .on('log', gutil.log)
 
